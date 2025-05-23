@@ -1,55 +1,29 @@
-# README Template
+# Text Classification with spaCy and Logistic Regression
 
-Below is a template provided for use when building your README file for students.
+This project demonstrates a complete machine learning pipeline for binary sentiment classification of customer reviews using Python, spaCy, and scikit-learn.
 
-# Project Title
+## 📂 Overview
 
-Project description goes here.
+We build a classification model that predicts whether a customer recommends a product based on their written review. The project includes:
 
-## Getting Started
+- Text preprocessing with `spaCy`
+- Feature extraction using `TfidfVectorizer`
+- Model training with `LogisticRegression`
+- Evaluation using accuracy, confusion matrix, and classification report
 
-Instructions for how to get a copy of the project running on your local machine.
+## 🧠 Technologies Used
 
-### Dependencies
+- Python 3.9
+- spaCy (`en_core_web_sm`)
+- pandas
+- scikit-learn
+- matplotlib
 
-```
-Examples here
-```
+## 📊 Dataset
 
-### Installation
+A toy dataset of 6 reviews is used for demonstration purposes. Each review is labeled as either **1 (positive)** or **0 (negative)**. You can replace this with a real dataset by loading it with `pd.read_csv()`.
 
-Step by step explanation of how to get a dev environment running.
+## 🛠️ Pipeline Structure
 
-List out the steps
-
-```
-Give an example here
-```
-
-## Testing
-
-Explain the steps needed to run any automated tests
-
-### Break Down Tests
-
-Explain what each test does and why
-
-```
-Examples here
-```
-
-## Project Instructions
-
-This section should contain all the student deliverables for this project.
-
-## Built With
-
-* [Item1](www.item1.com) - Description of item
-* [Item2](www.item2.com) - Description of item
-* [Item3](www.item3.com) - Description of item
-
-Include all items used to build project.
-
-## License
-
-[License](LICENSE.txt)
+```text
+Text → spaCy Preprocessing → TfidfVectorizer → Logistic Regression → Prediction
